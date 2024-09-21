@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ticket counter</title>
+    <!-- daisiUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome  -->
+    <script
+      src="https://kit.fontawesome.com/5960bac3ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="bg-slate-50 py-5 px-7 grid grid-cols-3 gap-5">
+      <div class="col-span-2">
+        <h2 class="text-2xl">Select Your Seat</h2>
+        <p class="border-b-2 border-dashed my-4"></p>
+        <div class="flex justify-between items-center">
+          <p class="">
+            <i class="fa-solid fa-bus"></i>
+            <span>Available</span>
+          </p>
+          <p class="text-green-500">
+            <i class="fa-solid fa-bus"></i>
+            <span>Available</span>
+          </p>
+        </div>
+        <p class="border-b-2 border-dashed my-4"></p>
+        <!-- section:  seat section -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1"></p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <p class="col-span-8"></p>
+            <button class="col-span-2 btn">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+          </div>
+        </section>
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">A</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              A1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              A2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              A3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              A4
+            </button>
+          </div>
+        </section>
+        <!-- section B -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">B</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              B1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              B2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              B3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              B4
+            </button>
+          </div>
+        </section>
+        <!-- section c -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">C</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              C1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              C2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              C3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              C4
+            </button>
+          </div>
+        </section>
+        <!-- section D -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">D</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              D1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              D2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              D3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              D4
+            </button>
+          </div>
+        </section>
+        <!-- section E -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">E</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              E1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              E2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              E3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              E4
+            </button>
+          </div>
+        </section>
+        <!-- section F -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">F</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              F1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              F2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              F3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              F4
+            </button>
+          </div>
+        </section>
+        <!-- section G -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">G</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              G1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              G2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              G3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              G4
+            </button>
+          </div>
+        </section>
+        <!-- section H -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">H</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              H1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              H2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              H3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              H4
+            </button>
+          </div>
+        </section>
+        <!-- section I -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">I</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              I1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              I2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              I3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              I4
+            </button>
+          </div>
+        </section>
+        <!-- section J -->
+        <section class="grid grid-cols-12 gap-y-4 items-center">
+          <p class="col-span-1">J</p>
+          <div class="col-span-11 grid grid-cols-10 gap-16">
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              J1
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              J2
+            </button>
+            <p class="col-span-2 my-4"></p>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              J3
+            </button>
+            <button class="col-span-2 btn hover:bg-black hover:text-white my-4">
+              J4
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="">
+        <section class="mx-3 mt-2">
+          <div>
+            <h2 class="text-2xl">Select Your Seat</h2>
+            <p class="border-b-2 border-dashed my-4"></p>
+          </div>
+          <div class="bg-slate-100 px-8">
+            <h3 class="flex justify-between">
+              <div class="flex justify-center space-x-1">
+                <p>Seat</p>
+                <span class="text-green-500 w-4 h-4">0</span>
+              </div>
+              <p>Class</p>
+
+              <p>price</p>
+            </h3>
+            <p class="border-b-2 border-dashed"></p>
+            <div class="font-semibold text-xl text-green-400 text-center mt-4">
+              Total Seat
+            </div>
+            <p class="border-b-2 border-dashed"></p>
+            <ul class="flex justify-between py-3">
+              <h2>Total Price</h2>
+              <p>BDT: <span>****</span></p>
+            </ul>
+            <div class="flex justify-between py-3 r">
+              <input
+                disabled
+                class="rounded-xl w-full"
+                type="text"
+                placeholder="Have any copono"
+              />
+              <button class="btn text-green-400">Apply</button>
+            </div>
+            <ul class="flex justify-between py-3">
+              <h2>Grand Price</h2>
+              <p>BDT <span>****</span></p>
+            </ul>
+          </div>
+        </section>
+        <!-- from section -->
+        <section>
+          <div class="mt-3 px-5">
+            <label class="form-control w-full">
+              <div class="label">
+                <span class="label-text font-bold text-xl"
+                  >Passenger Name*</span
+                >
+              </div>
+              <input
+                type="text"
+                placeholder="input passenger name"
+                class="input input-bordered w-full"
+              />
+            </label>
+          </div>
+          <div class="mt-3 px-5">
+            <label class="form-control w-full">
+              <div class="label">
+                <span class="label-text font-bold text-xl">Phone Number*</span>
+              </div>
+              <input
+                type="text"
+                placeholder="input passenger number"
+                class="input input-bordered w-full"
+              />
+            </label>
+          </div>
+          <div class="mt-3 px-5">
+            <label class="form-control w-full">
+              <div class="label">
+                <span class="label-text font-bold text-xl">Email Id*</span>
+              </div>
+              <input
+                type="text"
+                placeholder="input passenger email"
+                class="input input-bordered w-full"
+              />
+            </label>
+          </div>
+
+          <button class="btn mx-3 mt-5 bg-green-500">Next</button>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
