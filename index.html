@@ -30,6 +30,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              primary: "#da373d",
             },
           },
         },
@@ -382,7 +383,7 @@
             <h3 class="flex justify-between">
               <div class="flex justify-center space-x-1">
                 <p>Seat</p>
-                <span class="text-green-500 w-4 h-4">0</span>
+                <span id="total-seat" class="text-green-500 w-4 h-4">0</span>
               </div>
               <p>Class</p>
 
@@ -393,25 +394,28 @@
               id="selected-seat"
               class="font-semibold text-lg text-green-400 text-center mt-4"
             >
-              <h3>Total Seat</h3>
+              <h3 id="default-seat">Total Seat</h3>
             </ul>
             <p class="border-b-2 border-dashed"></p>
             <ul class="flex justify-between py-3">
               <h2>Total Price</h2>
-              <p>BDT: <span>****</span></p>
+              <p>BDT: <span id="total-price"> </span></p>
             </ul>
-            <div class="flex justify-between py-3 r">
+            <div id="show-cupon-price" class="flex justify-between py-3 r">
               <input
+                id="cupon-field"
                 disabled
-                class="rounded-xl w-full"
                 type="text"
-                placeholder="Have any copono"
+                placeholder="have a cupon"
+                class="input input-bordered input-info w-full max-w-xs"
               />
-              <button class="btn text-green-400">Apply</button>
+              <button id="cupon-btn" disabled class="btn text-green-400">
+                Apply
+              </button>
             </div>
             <ul class="flex justify-between py-3">
               <h2>Grand Price</h2>
-              <p>BDT <span>****</span></p>
+              <p>BDT <span id="total-grand-price">****</span></p>
             </ul>
           </div>
         </section>
@@ -437,6 +441,7 @@
                 <span class="label-text font-bold text-xl">Phone Number*</span>
               </div>
               <input
+                id="phone-number"
                 type="text"
                 placeholder="input passenger number"
                 class="input input-bordered w-full"
@@ -455,6 +460,8 @@
               />
             </label>
             <button
+              id="next-btn"
+              disabled
               onclick="my_modal_3.showModal()"
               class="btn rounded-xl w-full mt-5 bg-green-500"
             >
@@ -466,6 +473,7 @@
               <div class="modal-box">
                 <form method="dialog">
                   <button
+                    id="btn-continue"
                     class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                   >
                     ✕
@@ -493,5 +501,6 @@
       </div>
     </section>
     <script src="./js/ticket.js"></script>
+    <script src="./js/event.js"></script>
   </body>
 </html>
